@@ -201,6 +201,11 @@ p.mayus {
 	text-decoration: underline;
 	text-transform: uppercase;
 }
+h4.well {
+	background-color: #222222;
+	color: #FFFFFF;
+}
+
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
