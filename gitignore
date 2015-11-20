@@ -1,0 +1,4 @@
+# Ermeslink gitignore file
+
+# 20/11/2015: Ignorado config.json
+*.json
