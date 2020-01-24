@@ -1,213 +1,232 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contatti</title>
-<!-- Bootstrap -->
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contatti</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- Monserrat, Roboto, Pacifico, Permanent Marker -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Pacifico|Permanent+Marker|Roboto" rel="stylesheet">
+
+	<!-- Css in development -->
+	<link rel="stylesheet" href="css/develop.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	<link rel="shortcut icon" type="img/gif" href="img/logo.gif">
+	<!-- Recaptchav2 -->
+	<script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
+	
+<!--<body style="padding-top:104px; padding-bottom:70px;">-->
 <body>
-<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-  <div class="container-fluid">
+<!-- NavBar -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="z-index: 1">
+  <div class="container"> 
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="default.html">Ermeslink</a> </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="default.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home </a></li>
-        <li><a href="chi siamo.html"><span class="glyphicon glyphicon-user"></span> Chi Siamo</a></li>
-        <li><a href="servizi.html"><span class="glyphicon glyphicon-briefcase"></span> Servizi</a></li>
-        <li><a href="mappa copertura.html"><span class="glyphicon glyphicon-globe"></span> Mappa Copertura</a></li>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="img/logo_2.png" alt="logo"></a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class=""><a href="default.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+        <li class=""><a href="chi siamo.html"><span class="glyphicon glyphicon-user"></span> Chi Siamo</a></li>
+        <li class=""><a href="servizi.html"><span class="glyphicon glyphicon-briefcase"></span> Servizi</a></li>
+        <li class=""><a href="mappa copertura.html"><span class="glyphicon glyphicon-globe"></span> Mappa Copertura</a></li>
         <li class="active"><a href="contatti.html"><span class="glyphicon glyphicon-envelope"></span> Contatti</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Italiano <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Inglese</a></li>
-            <li><a href="#">Spagnolo</a></li>
-          </ul>
-        </li>
-      </ul>
     </div>
-    <!-- /.navbar-collapse -->
   </div>
-  <!-- /.container-fluid -->
+  <!-- /.container-fluid --> 
 </nav>
 <!-- NavBar ends here -->
+<!-- Success message -->
 <div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="jumbotron"> <img src="img/1200X400.gif" alt="" class="img-responsive">
-        <h1 class="text-center">Ermeslink</h1>
-        <p class="text-center">Internet Ovunque.</p>
-      </div>
-    </div>
-  </div>
+	<div class="message" style="z-index: 10;">
+		<div style="padding: 5px;">
+			<div id="success-message" class="alert alert-success alert-dismissible">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				<p class="text-center">E-mail inviata con <strong>successo!</strong></p>
+			</div>
+		</div>
+	</div>
 </div>
-<!-- Banner ends here -->
+<!-- Success message ends here -->
+<!-- Error message -->
 <div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <h2>Contatti</h2>
-      <ul>
-        <li>Se sei interessato ad avere finalmente una connessione stabile, veloce ed economica per la tua abitazione, indipendentemente da dove ti trovi</li>
-        <li>Se la tua azienda necessita di internet senza compromessi per restare in contatto con il mondo nonostante la sua location</li>
-      </ul>
-      <p>...non esitare a contattarci, compila il forum sottostante, o se preferisci contattaci telefonicamente, verificheremo personalmente ogni richiesta, fornendo velocemente una risposta con studi di fattibilità e tempi di realizzazione.</p>
-      <p>Consulta anche la pagina <a href="mappa copertura.html">Mappa</a> per vedere le aree già raggiunte dal nostro servizio, ma ricorda che la nostra è una realtà in rapida espansione, con l'obiettivo di coprire tutta l'area Toscana in breve tempo, dal mare alla montagna...</p>
-    </div>
-  </div>
+	<div class="message" style="z-index: 10;">
+		<div style="padding: 5px;">
+			<div id="error-message" class="alert alert-danger alert-dismissible ">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+				<p class="text-center"><strong>Errore!</strong>, qualcosa è successo nella spedizione</p>
+			</div>
+		</div>
+	</div>
 </div>
-<section class="well">
-  <div class="container">
-    <div class="row">
-      <legend>Informazioni personali</legend>
-      <form class="form-horizontal" role="form">
-        <div class="form-group">
-          <div class="row">
-            <label for="name" class="col-md-2 col-xs-4 control-label">Nome e Cognome:</label>
-            <div class="col-md-6 col-xs-6">
-              <input type="text" class="form-control" placeholder="Nome e Cognome" id="name">
-            </div>
-          </div>
-          <div class="row">
-            <label for="società" class="col-md-2 col-xs-4 control-label">Società:</label>
-            <div class="col-md-6 col-xs-6">
-              <input type="text" class="form-control" placeholder="Società" id="Società">
-            </div>
-          </div>
-          <div class="row">
-            <label for="indirizzo" class="col-md-2 col-xs-4 control-label">Indirizzo:</label>
-            <div class="col-md-6 col-xs-6">
-              <input type="text" class="form-control" placeholder="Indirizzo" id="indirizzo">
-            </div>
-          </div>
-          <div class="row">
-            <label for="citta" class="col-md-2 col-xs-4 control-label">Città:</label>
-            <div class="col-md-6 col-xs-6">
-              <input type="text" class="form-control" placeholder="Città" id="citta">
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="row">
-      <legend>Recapito</legend>
-      <form class="form-horizontal" role="form">
-        <div class="form-group">
-          <div class="row">
-            <label for="email" class="col-md-2 col-xs-4 control-label">E-mail:</label>
-            <div class="col-md-6 col-xs-6">
-              <input type="text" class="form-control" placeholder="E-mail" id="email">
-            </div>
-          </div>
-          <div class="row">
-            <label for="telefono" class="col-md-2 col-xs-4 control-label">Telefono:</label>
-            <div class="col-md-6 col-xs-6">
-              <input type="text" class="form-control" placeholder="Telefono" id="telefono">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-xs-6 col-md-offset-2 col-xs-offset-4">
-              <p class="text-center">Inserire perlomeno un recapito (email e/o telefono)</p>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="row">
-      <legend>Dettaglio richiesta</legend>
-      <form class="form-horizontal" role="form">
-        <div class="form-group">
-          <div class="row">
-            <label for="motivo" class="col-md-2 col-xs-4 control-label">Motivo della richiesta:</label>
-            <div class="col-md-6 col-xs-6">
-              <textarea class="form-control"></textarea>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="row">
-      <legend>Privacy</legend>
-      <form class="form-horizontal" role="form">
-        <div class="form-group">
-          <div class="row">
-            <div class="col-md-6 col-xs-6 col-md-offset-2 col-xs-offset-4">
-              <p>*Ho letto <a href="http://ermeslink.mytrident.net/informativa.html">l'informativa</a> e acconsento al trattamento dei dati</p>
-            </div>
-          </div>
-          <div class="row">
-              <div class="col-md-6 col-xs-6 col-md-offset-2 col-xs-offset-4 checkbox">
-                <label>
-                  <input type="checkbox">
-                  Acepto </label>
-              </div>
-          </div>
-          <div class="row">
-          	<div class="col-md-6 col-xs-6 col-md-offset-2 col-xs-offset-4">
-            	<p>Codice di controllo *</p>
-                <img class="img-responsive" src="http://lorempixel.com/280/130/captcha/" alt="captcha">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 col-xs-3 col-md-offset-2 col-xs-offset-4">
-            	<input type="text" class="form-control" id="captcha">
-            </div>
-          </div>
-          <div class="row">
-          	<div class="col-md-8 col-xs-8 col-md-offset-2 col-xs-offset-4">
-            	<p>Inserire nel campo i caratteri che si vedono nell'immagineInserire nel campo i caratteri che si vedono nell'immagine</p>
-            </div>
-          </div>
-          <div class="row">
-          	<div class="col-md-6 col-xs-6 col-md-offset-2 col-xs-offset-4">
-            	<button type="submit" class="btn btn-primary">Invia</button>
-                <button type="reset" class="btn btn-danger">Cancella</button>
-            </div>
-          </div>
-          <div class="row">
-          	<div class="col-md-6 col-xs-6 col-md-offset-2 col-xs-offset-4">
-            	<p>N:B: I campi contrassegnati con ( * ) sono obbligatori</p>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
+<!-- Error message ends here -->
+<!-- Banner -->
 <div class="container">
 	<div class="row">
-    	<div class="col-lg-12">
-        	<blockquote>Ermeslink ti porta Internet dove non hai nemmeno l'acqua corrente!</blockquote>
-        </div>
-    </div>
+		<div class="col-sm-12">
+			<img src="img/contatti1.jpg" alt="contatti" class="img-responsive center-block">
+		</div>
+	  	<div class="jumbotron col-lg-12" style="z-index: 1">
+		  	<h1 class="font-pacifico text-center"><span class="text-warning">Contatti</span></h1>
+		  	<hr class="hr-custom">
+		  	<p><small><span class="text-green glyphicon glyphicon-ok"></span> Se sei interessato ad avere finalmente una connessione stabile, veloce ed economica per la tua abitazione, indipendentemente da dove ti trovi</small></p>
+		  	<p><small><span class="text-green glyphicon glyphicon-ok"></span> Se la tua azienda necessita di internet senza compromessi per restare in contatto con il mondo nonostante la sua location</small></p>
+		  	<p><small>...non esitare a contattarci, compila il forum sottostante, o se preferisci contattaci telefonicamente, verificheremo personalmente ogni richiesta, fornendo velocemente una risposta con studi di fattibilità e tempi di realizzazione.</small></p>
+		  	<p><small>Consulta anche la pagina <a href="mappa copertura.html">Mappa</a> per vedere le aree già raggiunte dal nostro servizio, ma ricorda che la nostra è una realtà in rapida espansione, con l'obiettivo di coprire tutta l'area Toscana in breve tempo, dal mare alla montagna...</small></p>
+	  	</div>
+	</div>
 </div>
-<footer class="text-center">
+<!-- Banner ends here -->
+<!-- Contact Form -->
+<div class="jumbotron container">
+<form id="contact_form" class="form-horizontal" role="form">
+	<!-- Informazioni personali -->
+	<div class="row center-block">
+	  <legend>Informazioni personali</legend>     
+		<div class="form-group">
+		  <div class="row">
+			<label for="name" class="col-md-2 col-md-offset-1 col-xs-5 control-label">Nome e Cognome(*):</label>
+			<div class="col-md-6 col-xs-6">
+			  <input type="text" class="form-control" placeholder="Nome e Cognome" name="name" required>
+			</div>
+		  </div>
+		  <div class="row">
+			<label for="società" class="col-md-2 col-xs-4 col-xs-offset-1 control-label">Società:</label>
+			<div class="col-md-6 col-xs-6">
+			  <input type="text" class="form-control" placeholder="Società" name="society">
+			</div>
+		  </div>
+		  <div class="row">
+			<label for="indirizzo" class="col-md-2 col-xs-4 col-xs-offset-1 control-label">Indirizzo:</label>
+			<div class="col-md-6 col-xs-6">
+			  <input type="text" class="form-control" placeholder="Indirizzo" name="address">
+			</div>
+		  </div>
+		  <div class="row">
+			<label for="citta" class="col-md-2 col-xs-4 col-xs-offset-1 control-label">Città:</label>
+			<div class="col-md-6 col-xs-6">
+			  <input type="text" class="form-control" placeholder="Città" name="city">
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- Informazioni personali ends here -->
+	<!-- Recapito -->
+	<div class="center-block row">
+	  <legend>Recapito</legend>
+		<div class="form-group">
+		  <div class="row">
+			<label for="email" class="col-md-2 col-xs-4 col-xs-offset-1 control-label">E-mail(*):</label>
+			<div class="col-md-6 col-xs-6">
+			  <input type="email" class="form-control" placeholder="E-mail" name="email" required>
+			</div>
+		  </div>
+		  <div class="row">
+			<label for="telefono" class="col-md-2 col-xs-4 col-xs-offset-1 control-label">Telefono(*):</label>
+			<div class="col-md-6 col-xs-6">
+			  <input type="tel" class="form-control" placeholder="Telefono" name="telno" required min="9">
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- Recapito ends here -->
+	<!-- Dettaglio richiesta -->
+	<div class="row center-block">
+	  <legend>Dettaglio richiesta</legend>
+		<div class="form-group">
+		  <div class="row">
+			<label for="motivo" class="col-md-2 col-xs-4 control-label col-xs-offset-1">Motivo della richiesta(*):</label>
+			<div class="col-md-6 col-xs-6">
+			  <textarea class="form-control" required name="message"></textarea>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- Dettaglio richiesta ends here -->
+	<!-- Privacy -->
+	<div class="row center-block">
+	  <legend>Privacy</legend>
+		<div class="form-group">
+		  <div class="row">
+			<div class="col-md-6 col-xs-11 col-md-offset-2 col-xs-offset-1">
+			  <p><small>(*)Ho letto <a href="" onclick="window.open('informativa.html', 'windowname1', 'width=500, height=450,scrollbars=1'); return false;">l'informativa</a> e acconsento al trattamento dei dati</small></p>
+				<label>
+				  <input type="checkbox" name="privacy" required/>
+				  Acepto</label>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-md-6 col-xs-6 col-md-offset-2 col-xs-offset-1">
+				<div class="g-recaptcha" data-sitekey="6Le8UT8UAAAAAAsQ4NT2vOoz725gv_Y5FVY4j8Uu" hl="it"></div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-md-6 col-xs-11 col-md-offset-2 col-xs-offset-1">
+				<button type="submit" class="btn btn-primary">Invia</button>
+				<br>
+				<strong><small>N:B: I campi contrassegnati con ( * ) sono obbligatori</small></strong>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- Privacy ends here -->
+</form>
+</div>
+<!-- Contact Form ends here -->
+<!-- Footer -->
+<div class="navbar navbar-inverse navbar-static-bottom" id="footer" role="navigation">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p>ERMESLINK Copyright © 2015 sede legale: P.zza L.A Muratori 4 50134 Firenze (FI)<br>
-          Codice Fiscale e Partita IVA 06040360486 - Numero iscrizione  C.C.I.A.A. FI 595286<br>
-          www.ermeslink.it - mail to: info@ermeslink.it - Tel. 335 6225603</p>
-      </div>
-    </div>
+	  <div class="row" style="margin-top: 15px;">
+		  <div class="col-xs-12 col-sm-4 col-md-3 vcenter">
+		  <a class="navbar-brand" href="default.html"><img src="img/logo.png" class="center-block" alt="logo"></a> 
+		  </div><!--
+		  --><div class="col-xs-12 col-sm-8 col-md-2 text-center vcenter">
+		  <ul class="nav nav-pills nav-stacked">
+			  <li style="margin-bottom: 10px;"><span style="font-family: 'Pacifico', cursive; font-size: 1.2em"><u>NAVIGA</u></span></li>
+		  	<li role="presentation"><a href="default.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+		  	<li role="presentation"><a href="chi siamo.html"><span class="glyphicon glyphicon-user"></span> Chi Siamo</a></li>
+		  	<li role="presentation"><a href="servizi.html"><span class="glyphicon glyphicon-briefcase"></span> Servizi</a></li>
+		  	<li role="presentation"><a href="mappa copertura.html"><span class="glyphicon glyphicon-globe"></span> Mappa Copertura</a></li>
+		  	<li role="presentation" class="active"><a href="contatti.html"><span class="glyphicon glyphicon-envelope"></span> Contatti</a></li>
+		  </ul></div><!--
+		  --><div class="col-xs-12 col-sm-12 col-md-7 vcenter">
+		  <p class="text-center">ERMESLINK Copyright © 2010-2018 sede legale: <a href="https://www.google.com/maps/place/Piazza+Ludovico+Antonio+Muratori,+4,+50134+Firenze+FI,+Italia/@43.787591,11.2477931,17z/data=!3m1!4b1!4m5!3m4!1s0x132a569f9cc76537:0x128146db61f42262!8m2!3d43.787591!4d11.2499818" target="new">P.zza L.A Muratori 4 50134 Firenze (FI)</a><br>
+			  Codice Fiscale e Partita IVA 06040360486 - Numero iscrizione  C.C.I.A.A. FI 595286</p>
+		  </div>
+	  </div>
+	  <div class="row" style="border-top: 1px solid ghostwhite; padding-top: 10px;">
+		  <div class="col-xs-12">
+			  <p class="text-center"><a href="http://www.ermeslink.it">www.ermeslink.it</a> - mail to: <a href="mailto:info@ermeslink.it">info@ermeslink.it</a>  - Tel. <a href="tel:3920288001">392 0288001</a></p>
+		  </div>
+	  </div>
   </div>
-</footer>
+</div>
+<!-- Footer ends here --> 
+<button onclick="topFunction()" id="myBtn" title="Go to top"><span class="glyphicon glyphicon-chevron-up"></span></button>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-1.11.2.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/develop.js"></script>
 </body>
 </html>

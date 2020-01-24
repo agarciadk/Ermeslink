@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ermeslink: Contatti</title>
+	</head>	
+	<body>
+		<table height="405" style="border-spacing:0;">
+		  <tr>
+			<td width="155"></td>
+			<td width="531" height="30">
+				<img src="img/logo_2.png" alt="img">
+			</td>
+		  </tr>
+		  <tr>
+			<td style="vertical-align: text-top; text-align: center; background-color:aliceblue;border:5px dashed #42AADC; border-bottom: none;">
+				<h1 style="color:#3489E3">Contatti</h1>
+				<p><strong>Nome e Cognome</strong>: <br><small>'.$_POST['name'].'</small></p>
+				<p><strong>Società</strong><br><small>'.$_POST['society'].'</small></p>
+				<p><strong>Indirizzo</strong><br><small>'.$_POST['address'].'</small></p>
+				<p><strong>Città</strong><br><small>'.$_POST['city'].'</small></p>
+				<p><strong>E-mail</strong>: <br><small><a href="mailto:'.$_POST['email'].'">'.$_POST['email'].'</a></small></p>
+				<p><strong>Telefono</strong>: <br><small>'.$_POST['telno'].'</small></p>
+			</td>
+			<td style="border-bottom: 5px dashed #42AADC; padding: 0px 5px;">
+				<p><strong>Richiesta</strong>: <br>'.$_POST['message'].'</p>
+				
+				<hr style="margin-top:100px;">
+				<p style="font-size: 12px;">Questo messaggio contiene informazioni riservate e privilegiate. È indirizzato al
+							destinatari solo ed esclusivamente. Se non sei il destinatario della stessa non leggi,
+							copiare, o distribuire le informazioni in esso contenute o agire su di esso. Se tu
+							Hai ricevuto questo messaggio per errore, distruggilo e avvisa il mittente o
+							e-mail:<br>
+							<a href="mailto:info@ermeslink.it">"info@ermeslink.it"</a></p>
+				<p style="font-size: 12px;">This message contains privileged and confidential information solely for the exclusive use 
+							of the intended recipients. Copying, distribution, disclosure or any use of the information 
+							contained in this document is NOT permitted without the consent of the original sender. If you 
+							have received this message by error, please destroy it and notify sender or the following e-mail:<br>
+							<a href="mailto:info@ermeslink.it">"info@ermeslink.it"</a></p>
+			</td>
+		  </tr>
+		  <tr>
+			<td height="53" colspan="2" style="border-right: 5px dashed #42AADC;border-left: 5px dashed #42AADC; border-bottom: 5px solid #42AADC;background-color: aliceblue;" cellpadding="0">
+				<p style="font-size:14px;text-align: center; padding-top:0px;padding-left:10px;">
+					ERMESLINK Copyright&copy; 2010-2018. sede legale: P.zza L.A Muratori 4 50134 Firenze (FI)<br>
+Codice Fiscale e Partita IVA 06040360486 - Numero iscrizione C.C.I.A.A. FI 595286<br>
+<a href="www.ermeslink.it">www.ermeslink.it</a> - mail to: <a href="mailto:info@ermeslink.it">info@ermeslink.it</a> - Tel. <a href="tel:392-0288001">392-0288001</a>.
+				</p>
+			</td>
+		  </tr>
+		</table>
+	</body>
+</html>
